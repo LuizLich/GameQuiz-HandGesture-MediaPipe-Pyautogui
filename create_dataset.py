@@ -27,7 +27,7 @@ for dir_ in os.listdir(DATA_DIR):
         img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
         results = hands.process(img_rgb)
-        if results.multi_hand_landmarks:
+        if results.multi_hand_landmarks and len(results.multi_hand_landmarks) == 1:
             for hand_landmarks in results.multi_hand_landmarks:
                 for i in range(len(hand_landmarks.landmark)):
                     x = hand_landmarks.landmark[i].x
