@@ -1,5 +1,6 @@
 # sign-language-detector-python
 
-Sign language detector with Python, OpenCV and Mediapipe !
+Reference implementation:
 
-[![Watch the video](https://img.youtube.com/vi/MJCSjXepaAM/0.jpg)](https://www.youtube.com/watch?v=MJCSjXepaAM)
+[YouTube Video](https://www.youtube.com/watch?v=MJCSjXepaAM)
+[Repository: sign-language-detector-python](https://github.com/computervisioneng/sign-language-detector-python)
