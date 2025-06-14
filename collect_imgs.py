@@ -2,6 +2,7 @@ import os
 
 import cv2
 
+from preprocessing import preprocess_frame
 
 DATA_DIR = './data'
 if not os.path.exists(DATA_DIR):
@@ -29,6 +30,7 @@ for j in range(number_of_classes):
     counter = 0
     while counter < dataset_size:
         ret, frame = cap.read()
+        frame = preprocess_frame(frame)  # Applies preprocessing
         cv2.imshow('frame', frame)
         cv2.waitKey(25)
         cv2.imwrite(os.path.join(DATA_DIR, str(j), '{}.jpg'.format(counter)), frame)

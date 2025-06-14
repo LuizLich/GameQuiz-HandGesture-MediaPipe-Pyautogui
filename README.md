@@ -11,12 +11,13 @@ The base of this project has as reference implementation the repository of [comp
 *   **Data Collection and Training:** Tools to collect gesture images and train a custom gesture classifier.
 *   **Quiz Profile Creation:** Easily configure new quiz profiles for your favorite websites and quiz games, adapting the system to your needs.
 *   **PyAutoGUI Integration:** Automation of graphical interface interactions for a fluid experience.
+*   **Image Preprocessing:** Techniques such as grayscale conversion, histogram equalization and contrast enhancement are applied to improve detection accuracy, especially in low-light environments.
 
 ## ⚙️Technologies Used
 
 *   **Python:** Main programming language.
 *   **MediaPipe:** For hand gesture detection and tracking.
-*   **OpenCV (cv2):** For image manipulation and video capture.
+*   **OpenCV (cv2):** For image manipulation, video capture, and preprocessing.
 *   **PyAutoGUI:** For graphical interface automation.
 *   **Scikit-learn:** For gesture classifier training.
 

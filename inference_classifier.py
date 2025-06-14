@@ -5,6 +5,7 @@ import numpy as np
 import pyautogui
 import time
 from quiz_profiles import profiles
+from preprocessing import preprocess_frame
 
 # ---------------------
 # Quiz Profile Selection
@@ -48,6 +49,8 @@ while True:
     ret, frame = cap.read()
     if not ret:
         break
+
+    frame = preprocess_frame(frame)  # Applies preprocessing
 
     H, W, _ = frame.shape
     frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
