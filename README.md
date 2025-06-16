@@ -64,9 +64,9 @@ To use the quiz system, you will need to follow a sequence of steps to configure
 
 
 4.  **Create the Image Database:**
-    Run `create_database.py` to organize the collected images into folders, forming the database for training.
+    Run `create_dataset.py` to organize the collected images into folders, forming the database for training.
     ```bash
-    python create_database.py
+    python create_dataset.py
     ```
 
 5.  **Train the Classifier:**
